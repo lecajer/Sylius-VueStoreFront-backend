@@ -108,6 +108,14 @@ RUN chmod +x /usr/local/bin/docker-entrypoint
 ENTRYPOINT ["docker-entrypoint"]
 CMD ["php-fpm"]
 
+FROM sylius_php AS sylius_php_dev
+
+RUN apk add --no-cache $PHPIZE_DEPS \
+    && pecl install xdebug-3.1.3 \
+    && docker-php-ext-enable xdebug \
+    && echo "xdebug.mode=debug" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+
 FROM node:${NODE_VERSION}-alpine AS sylius_node
 
 WORKDIR /srv/sylius
