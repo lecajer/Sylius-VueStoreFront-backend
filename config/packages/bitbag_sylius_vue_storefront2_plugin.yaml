@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@BitBagSyliusVueStorefront2Plugin/Resources/config/services.xml" }

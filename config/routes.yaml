@@ -1,2 +1,4 @@
 sylius_paypal_webhook:
     resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
+bitbag_sylius_vue_storefront2_plugin:
+    resource: "@BitBagSyliusVueStorefront2Plugin/Resources/config/routing.yml"

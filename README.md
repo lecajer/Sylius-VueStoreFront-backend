@@ -11,6 +11,7 @@ It is based on the [Sylius-Standard 1.11](https://github.com/Sylius/Sylius-Stand
 
 - XDebug enabled
 - Platform.sh configure to host the project, deploy with git push
+- Plugin to enable GraphQL for VueStoreFront : [bitbag/SyliusVueStorefront2Plugin](https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin)
 
 Documentation
 -------------
