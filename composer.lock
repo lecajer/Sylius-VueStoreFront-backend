@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54738f9e12efb94ded343592ebeb837d",
+    "content-hash": "aea5faac05258b923f239fd7b58be60d",
     "packages": [
         {
             "name": "alcohol/iso4217",
@@ -362,6 +362,92 @@
                 "source": "https://github.com/Behat/Transliterator/tree/v1.5.0"
             },
             "time": "2022-03-30T09:27:43+00:00"
+        },
+        {
+            "name": "bitbag/vue-storefront2-plugin",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin.git",
+                "reference": "b343f5102caa1f4515d1ba3af0f1e83ea206cd8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BitBagCommerce/SyliusVueStorefront2Plugin/zipball/b343f5102caa1f4515d1ba3af0f1e83ea206cd8f",
+                "reference": "b343f5102caa1f4515d1ba3af0f1e83ea206cd8f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-openssl": "*",
+                "gesdinet/jwt-refresh-token-bundle": "^0.12.0",
+                "php": "^8.0",
+                "sylius/sylius": "~1.11.0",
+                "webonyx/graphql-php": "^14.9"
+            },
+            "require-dev": {
+                "behat/behat": "^3.6.1",
+                "behat/mink-selenium2-driver": "^1.4",
+                "dmore/behat-chrome-extension": "^1.3",
+                "dmore/chrome-mink-driver": "^2.7",
+                "friends-of-behat/mink": "^1.8",
+                "friends-of-behat/mink-browserkit-driver": "^1.4",
+                "friends-of-behat/mink-debug-extension": "^2.0.0",
+                "friends-of-behat/mink-extension": "^2.4",
+                "friends-of-behat/page-object-extension": "^0.3",
+                "friends-of-behat/suite-settings-extension": "^1.0",
+                "friends-of-behat/symfony-extension": "^2.1",
+                "friends-of-behat/variadic-extension": "^1.3",
+                "friendsofsymfony/oauth-server-bundle": "^1.6 || >2.0.0-alpha.0 ^2.0@dev",
+                "phpspec/phpspec": "^7.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "0.12.85",
+                "phpstan/phpstan-doctrine": "0.12.33",
+                "phpstan/phpstan-strict-rules": "^0.12.0",
+                "phpstan/phpstan-webmozart-assert": "0.12.12",
+                "phpunit/phpunit": "^9.5",
+                "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+                "sensiolabs/security-checker": "^6.0",
+                "sylius-labs/coding-standard": "^4.0",
+                "symfony/browser-kit": "^4.4 || ^5.2",
+                "symfony/debug-bundle": "^4.4 || ^5.2",
+                "symfony/dotenv": "^4.4 || ^5.2",
+                "symfony/intl": "^4.4 || ^5.2",
+                "symfony/web-profiler-bundle": "^4.4 || ^5.2",
+                "vimeo/psalm": "4.7.1"
+            },
+            "type": "sylius-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BitBag\\SyliusVueStorefront2Plugin\\": "src/",
+                    "Tests\\BitBag\\SyliusVueStorefront2Plugin\\": [
+                        "tests/",
+                        "tests/Application/src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Sylius backend integration for Vue Storefront 2",
+            "keywords": [
+                "api-platform",
+                "graphql",
+                "sylius",
+                "sylius-plugin",
+                "vue-storefront2"
+            ],
+            "support": {
+                "issues": "https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin/issues",
+                "source": "https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin/tree/v1.1.0"
+            },
+            "time": "2022-12-05T21:47:27+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -2430,6 +2516,63 @@
                 "wiki": "https://github.com/Atlantic18/DoctrineExtensions/tree/main/doc"
             },
             "time": "2022-11-14T20:25:40+00:00"
+        },
+        {
+            "name": "gesdinet/jwt-refresh-token-bundle",
+            "version": "v0.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markitosgv/JWTRefreshTokenBundle.git",
+                "reference": "4a7109df39b84b5bc41e6ee16da8cdcb9e0093fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markitosgv/JWTRefreshTokenBundle/zipball/4a7109df39b84b5bc41e6ee16da8cdcb9e0093fb",
+                "reference": "4a7109df39b84b5bc41e6ee16da8cdcb9e0093fb",
+                "shasum": ""
+            },
+            "require": {
+                "lexik/jwt-authentication-bundle": "^1.1|^2.0@dev",
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/framework-bundle": "~3.4|~4.0|~5.0",
+                "symfony/validator": "~3.4|~4.0|~5.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "~1.4|~2.0",
+                "doctrine/mongodb-odm-bundle": "^3.4|^4.0",
+                "doctrine/orm": "^2.4.8",
+                "phpspec/phpspec": "^3.0|^4.0|^5.0|^6.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gesdinet\\JWTRefreshTokenBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcos Gómez Vilches",
+                    "email": "marcos@gesdinet.com"
+                }
+            ],
+            "description": "Implements a refresh token system over Json Web Tokens in Symfony",
+            "keywords": [
+                "jwt refresh token bundle symfony json web"
+            ],
+            "support": {
+                "issues": "https://github.com/markitosgv/JWTRefreshTokenBundle/issues",
+                "source": "https://github.com/markitosgv/JWTRefreshTokenBundle/tree/v0.12.0"
+            },
+            "time": "2021-04-23T16:47:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -13605,6 +13748,72 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "webonyx/graphql-php",
+            "version": "v14.11.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/04a48693acd785330eefd3b0e4fa67df8dfee7c3",
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.3",
+                "doctrine/coding-standard": "^6.0",
+                "nyholm/psr7": "^1.2",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "0.12.82",
+                "phpstan/phpstan-phpunit": "0.12.18",
+                "phpstan/phpstan-strict-rules": "0.12.9",
+                "phpunit/phpunit": "^7.2 || ^8.5",
+                "psr/http-message": "^1.0",
+                "react/promise": "2.*",
+                "simpod/php-coveralls-mirror": "^3.0",
+                "squizlabs/php_codesniffer": "3.5.4"
+            },
+            "suggest": {
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/webonyx/graphql-php/issues",
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.8"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-09-21T15:35:03+00:00"
         },
         {
             "name": "willdurand/hateoas",

@@ -28,6 +28,7 @@ hooks:
     deploy: |
         set -e
         rm -rf var/cache/*
+        bin/console doctrine:migrations:migrate --no-interaction
         bin/console sylius:install -n
         bin/console sylius:fixtures:load -n
         bin/console assets:install --symlink --relative public

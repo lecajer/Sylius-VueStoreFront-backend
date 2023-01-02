@@ -10,6 +10,10 @@ imports:
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
 
+sylius_api:
+    enabled: true
+
+
 sylius_addressing:
     resources:
         address:
@@ -220,6 +224,7 @@ sylius_taxonomy:
         taxon:
             classes:
                 model: App\Entity\Taxonomy\Taxon
+                repository: BitBag\SyliusVueStorefront2Plugin\Doctrine\Repository\TaxonRepository
             translation:
                 classes:
                     model: App\Entity\Taxonomy\TaxonTranslation
