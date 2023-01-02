@@ -220,6 +220,7 @@ sylius_taxonomy:
         taxon:
             classes:
                 model: App\Entity\Taxonomy\Taxon
+                repository: BitBag\SyliusVueStorefront2Plugin\Doctrine\Repository\TaxonRepository
             translation:
                 classes:
                     model: App\Entity\Taxonomy\TaxonTranslation
