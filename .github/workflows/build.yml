@@ -144,10 +144,6 @@ jobs:
                 run: bin/console sylius:fixtures:load -n
 
             -   
-                name: Validate composer.json
-                run: composer validate --ansi --strict --no-check-publish
-                
-            -   
                 name: Run security check
                 run: symfony security:check
 
