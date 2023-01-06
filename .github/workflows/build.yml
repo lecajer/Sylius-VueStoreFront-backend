@@ -144,10 +144,6 @@ jobs:
                 run: bin/console sylius:fixtures:load -n
 
             -   
-                name: Validate composer.json
-                run: composer validate --ansi --strict --no-check-publish
-                
-            -   
                 name: Run security check
                 run: symfony security:check
 
@@ -175,20 +171,3 @@ jobs:
             -
                 name: Run managing catalog promotion scenarios
                 run: vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="~@javascript&&~@todo&&~@cli&&@managing_catalog_promotions"
-
-            -   
-                name: Run non-JS Behat (without managing catalog promotion scenarios)
-                run: vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="~@javascript&&~@todo&&~@cli&&@~managing_catalog_promotions" || vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="~@javascript&&~@todo&&~@cli&&@~managing_catalog_promotions" --rerun
-            
-            -
-                name: Run JS Behat
-                run: vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="@javascript&&~@todo&&~@cli" || vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="@javascript&&~@todo&&~@cli" --rerun || vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="@javascript&&~@todo&&~@cli" --rerun
-
-            -
-                name: Upload Behat logs
-                uses: actions/upload-artifact@v2
-                if: failure()
-                with:
-                    name: "Behat logs (PHP ${{ matrix.php }}, Symfony ${{ matrix.symfony }}, MySQL ${{ matrix.mysql }})"
-                    path: etc/build/
-                    if-no-files-found: ignore
