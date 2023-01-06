@@ -7,16 +7,21 @@
 <h1 align="center">Sylius Standard Edition with some additions</h1>
 
 <p align="center">This is Sylius Standard Edition repository for starting new projects or pick some commits</p>
+
 It is based on the [Sylius-Standard 1.11](https://github.com/Sylius/Sylius-Standard/tree/1.11) with the following additions :
 
 - XDebug enabled
 - Platform.sh configure to host the project, deploy with git push
 - Plugin to enable GraphQL for VueStoreFront : [bitbag/SyliusVueStorefront2Plugin](https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin)
+- Docker config to run locally with the corresponding frontend : [lecajer/Sylius-VueStoreFront-frontend](https://github.com/lecajer/Sylius-VueStoreFront-frontend)
+
 
 Documentation
 -------------
 
-Documentation is available at [docs.sylius.com](http://docs.sylius.com).
+Documentation is available :
+- [docs.sylius.com 1.11](https://docs.sylius.com/en/1.11/).
+- [Sylius GraphQL plugin](https://github.com/BitBagCommerce/SyliusVueStorefront2Plugin#table-of-content)
 
 Installation
 ------------
