@@ -101,3 +101,7 @@ services:
 volumes:
   mysql-data:
   public-media:
+
+networks:
+    default:
+        name: sylius-vuestorefront
