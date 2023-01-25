@@ -28,7 +28,7 @@
         "bitbag/vue-storefront2-plugin": "*",
         "sylius/paypal-plugin": "^1.2.1",
         "sylius/sylius": "~1.11.0",
-        "symfony/dotenv": "^4.4 || ^5.4",
+        "symfony/dotenv": "^6.0.19",
         "symfony/flex": "^1.11"
     },
     "conflict": {
